@@ -3,9 +3,6 @@ package org.example.app.task.dataaccess;
 import io.quarkus.test.junit.QuarkusTest;
 import jakarta.inject.Inject;
 import org.assertj.core.api.Assertions;
-import org.example.app.general.dataaccess.TaskItemEntity;
-import org.example.app.general.dataaccess.TaskListEntity;
-import org.example.app.general.dataaccess.TaskListRepository;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.junit.jupiter.api.BeforeEach;
@@ -76,7 +73,7 @@ public class TaskListRepositoryTest extends Assertions {
     }
 
     @Test
-    public void testFindAllTasksListsWithItemsThatAreOverDue() {
+    public void testFindAllTasksListsWithItemsThatAreOverdue() {
         //given
         LocalDateTime dueDate = LocalDateTime.now();
         //when

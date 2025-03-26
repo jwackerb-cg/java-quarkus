@@ -1,4 +1,4 @@
-package org.example.app.general.dataaccess;
+package org.example.app.task.dataaccess;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
